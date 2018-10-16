@@ -22,7 +22,8 @@ export const deckReducer = (state = initialState, action) => {
             return {
                 ...state,
                 deckList: action.data,
-                average: action.average
+                average: action.average,
+                cardDetails: {},
             };
         case GET_CARD_DETAILS:
             return {

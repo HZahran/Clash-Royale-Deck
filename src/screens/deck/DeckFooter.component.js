@@ -1,7 +1,9 @@
 import React from 'react';
 
 const DeckFooter = ({ average }) => (
-    <div></div>
+    <div>
+        {average}
+    </div>
 )
 
 export default DeckFooter;

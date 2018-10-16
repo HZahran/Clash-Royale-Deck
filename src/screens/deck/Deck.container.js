@@ -17,7 +17,7 @@ class DeckContainer extends Component {
         return (
             <main className="DeckContainer">
                 <Deck {...rest} />
-                <CardDetails data={cardDetails} />
+                <CardDetails {...cardDetails} />
             </main>
         );
     }

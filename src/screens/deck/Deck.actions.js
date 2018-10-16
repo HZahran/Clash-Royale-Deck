@@ -29,6 +29,6 @@ export const generateDeck = (allCardsList) => {
 
 export const getCardDetails = (id) => dispatch => {
     api.getCardDetails(id)
-        .then(res => dispatch(() => ({ type: GET_CARD_DETAILS, data: res })))
+        .then(res => dispatch({ type: GET_CARD_DETAILS, data: res }))
         .catch(err => console.log(err))
 };

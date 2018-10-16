@@ -24,8 +24,8 @@ export default {
     getCards() {
         return dataAPI.get('cards')
     },
-    getCardDetails(id) {
-        return dataAPI.get(`cards/${id}`)
+    getCardDetails(idName) {
+        return dataAPI.get(`cards/${idName}`)
     },
     getImageURL(idName) {
         return `${IMAGES_BASE_URL}/cards/${idName}.png`
