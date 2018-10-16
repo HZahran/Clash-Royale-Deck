@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ListCard extends Component {
-    render() {
-        return (
-            
-        );
-    }
-}
+const ListCard = ({ data }) => (
+    <div></div>
+)
 
 export default ListCard;

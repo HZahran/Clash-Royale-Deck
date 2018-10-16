@@ -16,7 +16,7 @@ export const deckReducer = (state = initialState, action) => {
         case GET_CARDS:
             return {
                 ...state,
-                cardsList: action.data
+                allCardsList: action.data
             };
         case GENERATE_DECK:
             return {

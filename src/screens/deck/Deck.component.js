@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import DeckContent from './DeckContent.component';
+import DeckFooter from './DeckFooter.component';
 
-class Deck extends Component {
-    render() {
-        return (
-            
-        );
-    }
+const Deck = ({ average, ...rest }) => (
+    <section className='DeckMain'>
+        <DeckContent {...rest} />
+        <DeckFooter average={average} />
+    </section>
+);
+
+Deck.prototypes = {
+
 }
 
 export default Deck;

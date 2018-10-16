@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class DeckFooter extends Component {
-    render() {
-        return (
-            
-        );
-    }
-}
+const DeckFooter = ({ average }) => (
+    <div></div>
+)
 
 export default DeckFooter;

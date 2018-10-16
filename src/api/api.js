@@ -7,6 +7,19 @@ const dataAPI = axios.create({
     baseURL: DATA_BASE_URL
 });
 
+/**
+ * Intercepts all ongoing responses to get the required data or error message directly
+ */
+
+dataAPI.interceptors.response.use(
+    response => {
+        return response.data
+    },
+    error => {
+        return Promise.reject(error.response.data)
+    }
+)
+
 export default {
     getCards() {
         return dataAPI.get('cards')

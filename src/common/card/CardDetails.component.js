@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class CardDetails extends Component {
-    render() {
-        return (
-            
-        );
-    }
-}
+const CardDetails = ({ data }) => (
+    <div></div>
+)
 
 export default CardDetails;

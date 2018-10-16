@@ -11,7 +11,7 @@ import {
 export const getCards = () => dispatch => {
     api.getCards()
         .then(res => {
-            dispatch(() => ({ type: GET_CARDS, data: res }))
+            dispatch({ type: GET_CARDS, data: res })
             dispatch(generateDeck(res))
         })
         .catch(err => console.log(err))
