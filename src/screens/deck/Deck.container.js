@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 import { getCardDetails, getCards, generateDeck } from './Deck.actions';
 import Deck from './Deck.component';
 import CardDetails from '../../common/card/CardDetails.component';
+import styles from './Deck.module.css';
 
 class DeckContainer extends Component {
 
@@ -15,7 +16,7 @@ class DeckContainer extends Component {
     render() {
         const { cardDetails, ...rest } = this.props;
         return (
-            <main className="DeckContainer">
+            <main className={styles.deckContainer}>
                 <Deck {...rest} />
                 <CardDetails {...cardDetails} />
             </main>

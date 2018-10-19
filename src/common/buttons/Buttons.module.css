@@ -1,0 +1,8 @@
+.yellow {
+    background: var(--yellow);
+    padding: 20px 10px;
+    color: var(--white);
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+}

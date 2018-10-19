@@ -1,0 +1,73 @@
+.listCard {
+    background-color: transparent;
+    width: 80%;
+    color: var(--white);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    /* animation: spin infinite 0.5s ease-in-out alternate; */
+}
+
+.listCard :hover {
+    opacity: 0.9;
+    overflow: visible;
+    white-space: normal; 
+}
+
+.listCard :active {
+    opacity: 0.8;
+}
+
+.listCardImg {
+    width: 100%;
+}
+
+.listCardText {
+    width: 86%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    margin: 0 auto;
+    padding: 3px 5px;
+    background-color: var(--red);
+    opacity: 0.6;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: none;
+}
+
+#elixir {
+    position: relative;
+    background-color: var(--violet);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+
+#elixir:before,
+#elixir:after {
+content: '';
+position: absolute;
+border-bottom: 70px solid red;
+border-left: 40px solid transparent;
+border-right: 40px solid transparent;
+top: 70px;
+left: -10px;
+transform: rotate(-140deg);
+}
+#elixir:after {
+left: auto;
+right: -10px;
+transform: rotate(140deg);
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(45deg);
+    }
+    to {
+      transform: rotate(-45deg);
+    }
+}

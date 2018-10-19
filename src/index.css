@@ -1,21 +1,21 @@
+@font-face {
+  font-family: 'CrashRoyale';
+  font-style: normal;
+  src: url('./assets/fonts/Supercell-magic-webfont.ttf'); 
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'CrashRoyale';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 *{
   box-sizing: border-box;
   outline: none;
+  font-family: 'CrashRoyale';
 }
 
 ul{
@@ -25,13 +25,18 @@ ul{
 
 html,body{
   height: 100%;
+  width: 100%;
 }
 
 :root{
-  --green: #1a617c;
-  --orange: #F3C746;
+  --green: #00C84B;
+  --yellow: #FFC954;
+  --blue: #009AE4;
   --grey: #b6b9bc;
   --dark-grey: #313335;
+  --dark-brown: rgba(111, 78, 59, 0.85);
+  --light-brown: rgba(140, 100, 73, 0.85);
   --white: #F8F8F8;
+  --violet: #E600D1;
   --red: #a50000;
 }
