@@ -1,25 +1,20 @@
 import React from 'react';
 import ListCard from '../../common/card/ListCard.component';
-import { YellowButton } from '../../common/buttons/YellowButton';
 import styles from './Deck.module.css';
 
-const DeckContent = ({ deckList, generateDeck, allCardsList, getCardDetails }) => (
-    <div class={styles.content}>
-        <div class={styles.list}>
+const DeckContent = ({ deckList, getCardDetails }) => (
+    <section className={styles.content}>
+        <div className={styles.list}>
             {deckList.map(item =>
-                <div className={styles.card}>
+                <div className={styles.card} key={item.idName} >
                     <ListCard
-                        key={item.idName}
                         getCardDetails={getCardDetails}
                         {...item}
                     />
                 </div>
             )}
         </div>
-        <YellowButton
-            text='Generate'
-            onClick={() => generateDeck(allCardsList)} />
-    </div>
+    </section>
 )
 
 export default DeckContent;

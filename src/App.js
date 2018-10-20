@@ -5,14 +5,16 @@ import rootReducer from './rootReducer';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux'
 import DeckContainer from './screens/deck/Deck.container';
+import Modal from 'react-modal';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
+Modal.setAppElement('#root')
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div className="App">
+        <div id="App">
           <DeckContainer />
         </div>
       </Provider>

@@ -32,14 +32,14 @@ html,body{
   --green: #00C84B;
   --yellow: #FFC954;
   --blue: #009AE4;
-  --grey: #b6b9bc;
+  --grey: rgb(148, 170, 177);
   --dark-grey: #313335;
   --brown: rgba(111, 78, 59, 0.85);
   --light-brown: rgba(140, 100, 73, 0.85);
-  --dark-brown: rgb(71, 59, 52);
+  --dark-brown: #492A1D;
   --white: #F8F8F8;
   --violet: rgb(252, 22, 233);
   --dark-violet: rgb(99, 8, 91);
-  --black: #000000;
+  --black: #363636;
   --red: #a50000;
 }

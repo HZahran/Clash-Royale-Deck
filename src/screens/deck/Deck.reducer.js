@@ -1,7 +1,8 @@
 import {
     GET_CARDS,
     GENERATE_DECK,
-    GET_CARD_DETAILS
+    GET_CARD_DETAILS,
+    CLEAR_CARD_DETAILS
 } from "./Deck.types";
 
 const initialState = {
@@ -30,6 +31,11 @@ export const deckReducer = (state = initialState, action) => {
                 ...state,
                 cardDetails: action.data
             };
+        case CLEAR_CARD_DETAILS:
+            return {
+                ...state,
+                cardDetails: {}
+            }
         default:
             return state;
     }

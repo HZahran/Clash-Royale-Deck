@@ -5,7 +5,8 @@ import api from '../../api/api';
 import {
     GET_CARDS,
     GENERATE_DECK,
-    GET_CARD_DETAILS
+    GET_CARD_DETAILS,
+    CLEAR_CARD_DETAILS
 } from "./Deck.types";
 
 export const getCards = () => dispatch => {
@@ -32,3 +33,7 @@ export const getCardDetails = (id) => dispatch => {
         .then(res => dispatch({ type: GET_CARD_DETAILS, data: res }))
         .catch(err => console.log(err))
 };
+
+export const clearDetails = () => ({
+    type: CLEAR_CARD_DETAILS
+})

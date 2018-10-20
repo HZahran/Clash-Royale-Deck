@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { getCardDetails, getCards, generateDeck } from './Deck.actions';
+import { getCardDetails, getCards, generateDeck, clearDetails } from './Deck.actions';
 import Deck from './Deck.component';
 import CardDetails from '../../common/card/CardDetails.component';
 import styles from './Deck.module.css';
@@ -14,11 +14,11 @@ class DeckContainer extends Component {
     }
 
     render() {
-        const { cardDetails, ...rest } = this.props;
+        const { cardDetails, clearDetails, ...rest } = this.props;
         return (
             <main className={styles.deckContainer}>
                 <Deck {...rest} />
-                <CardDetails {...cardDetails} />
+                <CardDetails {...cardDetails} clearDetails={clearDetails} />
             </main>
         );
     }
@@ -35,7 +35,8 @@ function mapDispatchToProps(dispatch) {
         {
             getCards,
             generateDeck,
-            getCardDetails
+            getCardDetails,
+            clearDetails
         },
         dispatch
     );
