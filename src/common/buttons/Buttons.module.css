@@ -1,8 +1,18 @@
 .yellow {
-    background: var(--yellow);
-    padding: 20px 10px;
+    background: url('../../assets/images/BattleButton.png') no-repeat;
+    background-size: contain    ;
+    padding: 25px 20px;
+    /* background-color: red; */
     color: var(--white);
     border: none;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.yellow:hover {
+    mix-blend-mode: difference;
+}
+
+.yellow:active {
+    mix-blend-mode: overlay;
 }

@@ -1,5 +1,6 @@
 .deckContainer {
-    background-image: repeating-linear-gradient(var(--light-brown), var(--dark-brown) 10px, var(--light-brown) 20px);
+    background-image: repeating-linear-gradient(var(--light-brown), var(--brown) 10px, var(--light-brown) 20px);
+    height: 100%;
 }
     
 .list {
@@ -11,6 +12,28 @@
 }
 
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-basis: 25%;  
     margin: 15px 0px;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: var(--brown);   
+    border-radius: 5px;
+    height: 50px;
+    box-shadow: 0 -3px 1px 0 var(--dark-brown);
+    margin: 0 auto;
+}
+
+.footerText {
+    color: var(--violet);
+    text-shadow: 0 2px 2px var(--black);
+    font-size: 1.5em
 }

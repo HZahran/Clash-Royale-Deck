@@ -1,73 +1,60 @@
 .listCard {
     background-color: transparent;
-    width: 80%;
+    margin: 10px;
+    width: 100%;
     color: var(--white);
     border: none;
     position: relative;
-    cursor: pointer;
-    /* animation: spin infinite 0.5s ease-in-out alternate; */
 }
 
-.listCard :hover {
+.listCardImg:hover {
     opacity: 0.9;
     overflow: visible;
     white-space: normal; 
 }
 
-.listCard :active {
+.listCardImg:active {
     opacity: 0.8;
 }
 
 .listCardImg {
-    width: 100%;
+    cursor: pointer;
 }
 
 .listCardText {
-    width: 86%;
+    width: 0;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 60px;
+    bottom: 20px;
     margin: 0 auto;
     padding: 3px 5px;
-    background-color: var(--red);
+    background-color: var(--yellow);
     opacity: 0.6;
-    white-space: nowrap; 
+    /* white-space: nowrap;  */
     overflow: hidden;
     text-overflow: ellipsis;
     pointer-events: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
 }
 
-#elixir {
-    position: relative;
-    background-color: var(--violet);
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-  }
-
-#elixir:before,
-#elixir:after {
-content: '';
-position: absolute;
-border-bottom: 70px solid red;
-border-left: 40px solid transparent;
-border-right: 40px solid transparent;
-top: 70px;
-left: -10px;
-transform: rotate(-140deg);
-}
-#elixir:after {
-left: auto;
-right: -10px;
-transform: rotate(140deg);
+.listCard:hover .listCardText{
+    bottom: 60px;
+    opacity: 0.9;
+    width: 60%;
 }
 
-@keyframes spin {
+.elixir {
+    position: absolute;
+    top: -3px;
+}
+@keyframes popUp {
     from {
-      transform: rotate(45deg);
+        bottom: 0;
     }
     to {
-      transform: rotate(-45deg);
+        bottom: 90px;
     }
 }

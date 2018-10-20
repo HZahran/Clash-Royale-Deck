@@ -1,0 +1,14 @@
+.elixir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/images/Elixir.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+.elixirText {
+    text-shadow: 0 2px 2px var(--dark-violet);
+    font-size: 1.5em
+}
