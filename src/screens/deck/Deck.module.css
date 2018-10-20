@@ -1,0 +1,64 @@
+.deckContainer {
+    background-image: repeating-linear-gradient(var(--light-brown), var(--brown) 10px, var(--light-brown) 20px);
+    padding: 2% 10%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-brown);   
+    border-radius: 10px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.headerTitle {
+    color: var(--white);
+    text-shadow: 0 2px 2px var(--black);
+    font-size: 1.5em;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;  
+    margin: 15px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);   
+    border-radius: 10px;
+    height: 60px;
+    box-shadow: 0 -3px 1px 0 var(--dark-brown);
+    margin: 0 auto;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.footerText {
+    color: var(--violet);
+    text-shadow: 0 2px 2px var(--black);
+    font-size: 1.5em;
+}
+
+.footerElixir {
+    margin-left: 15px;
+}
+
+.footerSword {
+    width: 100px;
+}

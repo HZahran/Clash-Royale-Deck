@@ -1,0 +1,28 @@
+.yellow {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background: transparent
+}
+
+.buttonImage {
+    width: 160px;
+}
+
+.buttonText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-size: 1.1em;
+}
+
+.yellow:hover {
+    mix-blend-mode: hard-light;
+}
+
+.yellow:active {
+    mix-blend-mode: overlay;
+}
