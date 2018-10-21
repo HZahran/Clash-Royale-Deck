@@ -3,10 +3,11 @@
 - This is a simple clash royale deck generator created using React integrated with the Clash API.
 
 ## Installation
-In order to run the project, you need to install 
-- [nodejs](https://nodejs.org/en/download/)
-- [yarn package manager](https://yarnpkg.com/lang/en/docs/install/)
-- Once installed, run
+- The app is deployed on heroku https://clash-royale-deck.herokuapp.com/
+- If you need to run locally, you have to install first 
+  - [nodejs](https://nodejs.org/en/download/)
+  - [yarn package manager](https://yarnpkg.com/lang/en/docs/install/)
+  - Once installed, run
 ``` 
   yarn install
   yarn start
