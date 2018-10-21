@@ -28,6 +28,9 @@ html,body{
   width: 100%;
 }
 
+#root{
+  height: 100%;
+}
 :root{
   --green: #00C84B;
   --yellow: #FFC954;
