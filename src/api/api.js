@@ -7,10 +7,10 @@ const dataAPI = axios.create({
     baseURL: DATA_BASE_URL
 });
 
-dataAPI.interceptors.request.use(config => {
-    config.headers['Access-Control-Allow-Origin'] = '*'
-    return config;
-});
+// dataAPI.interceptors.request.use(config => {
+//     config.headers['Access-Control-Allow-Origin'] = '*'
+//     return config;
+// });
 
 /**
  * Intercepts all ongoing responses to get the required data or error message directly
