@@ -1,6 +1,6 @@
 
 ## Overview
-- This is a simple clash royale deck generator created using React integrated with the Clash API.
+- This is a simple clash royale deck generator created using React/HTML/CSS integrated with the Clash API.
 
 ## Installation
 - The app is deployed on heroku https://clash-royale-deck.herokuapp.com/
