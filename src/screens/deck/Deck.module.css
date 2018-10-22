@@ -21,6 +21,9 @@
     font-size: 1.5em;
 }
 
+.headerButton {
+    margin-top: 5px;
+}
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +56,13 @@
     color: var(--violet);
     text-shadow: 0 2px 2px var(--black);
     font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.wrapText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footerElixir {
@@ -60,5 +70,6 @@
 }
 
 .footerSword {
+    margin-left: 20px;
     width: 100px;
 }
