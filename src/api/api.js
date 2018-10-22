@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const DATA_BASE_URL = 'http://www.clashapi.xyz/api/';
-export const IMAGES_BASE_URL = 'http://www.clashapi.xyz/images/';
+export const DATA_BASE_URL = 'https://www.clashapi.xyz/api/';
+export const IMAGES_BASE_URL = 'https://www.clashapi.xyz/images/';
 
 const dataAPI = axios.create({
     baseURL: DATA_BASE_URL
