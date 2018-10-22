@@ -19,6 +19,7 @@ export const getCards = () => dispatch => {
 };
 
 export const generateDeck = (allCardsList) => {
+    if (!allCardsList.length) return;
     let filteredData = shuffleList(allCardsList, 8);
     let average = calculateAverage(filteredData.map(card => card.elixirCost))
     return {
